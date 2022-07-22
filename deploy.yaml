@@ -7,7 +7,7 @@ metadata:
   name: rainap-frontend-1
   namespace: prraina
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: rainap-frontend-1
