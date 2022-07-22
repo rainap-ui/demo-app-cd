@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: rainap-frontend-1
+  name: rainap-frontend-1
+  namespace: prraina
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rainap-frontend-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: rainap-frontend-1
+    spec:
+      containers:
+      - image: rainap/demo-app
+        name: demo-app
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
